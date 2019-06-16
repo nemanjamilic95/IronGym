@@ -1,0 +1,81 @@
+﻿@model Application.DataTransfer.GetPostDto
+
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+
+<hr />
+
+<div class="text-center">
+    <h2>@Html.DisplayFor(model => model.Heading)</h2>
+
+
+    <div>
+        <input type="hidden" name="PostId" value="@Html.DisplayFor(model => model.Id)" />
+
+
+        <p class="text-info">by: @Html.DisplayFor(model => model.User)</p>
+        @*<p>
+                Likes:@Html.DisplayFor(model => model.Likes)
+                | Comments: @Html.DisplayFor(model => model.Comments)
+            </p>*@
+        <img src="~/images/post/@Html.DisplayFor(model => model.Picture)" />
+
+
+
+        <div>
+            <p>@Html.DisplayFor(model => model.Text)</p>
+        </div>
+
+
+
+    </div>
+    <br />
+    @if (ViewBag.Comments != null)
+    {
+        @foreach (var c in ViewBag.Comments)
+        {
+            <hr style="color:black" />
+
+            <div class="row">
+
+                <p class="text-info">by: <strong>@c.Username</strong></p>&nbsp;
+                <img src="~/images/avatar/@c.Avatar" class="img-fluid rounded-circle w-25" />&nbsp;&nbsp;
+                <form asp-controller="Comments" asp-action="Edit" method="post">
+                    <input type="hidden" name="UserId" value="@c.IdUser" />
+                    <input type="hidden" name="Id" value="@c.Id" />
+                    <input type="text" value="@c.Text" name="Text" style="border:none" />
+                    <input type="submit" class="btn-primary" value="Edit" />
+                </form>
+                &nbsp;
+                <form asp-controller="Comments" asp-action="Delete" method="post">
+                   <input type="hidden" name="Id" value="@c.Id" />                   
+                    <input type="submit" class="btn-danger" value="Delete" />
+                </form>
+            </div>
+
+          
+
+        }
+    }
+    <hr />
+<form asp-controller="Comments" asp-action="Create" method="post">
+    <textarea name="Text" rows="3" cols="100"></textarea>
+    <input type="hidden" name="PostId" value="@Html.DisplayFor(model => model.Id)" />
+    <input type="hidden" name="UserId" value="2" /><br/>
+    <input type="submit" name="submit" value="Insert Comment" />
+</form>
+
+</div>
+
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    <a asp-action="Index">Back to List</a>
+</div>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

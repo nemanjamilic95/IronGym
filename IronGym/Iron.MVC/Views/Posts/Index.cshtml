@@ -1,0 +1,88 @@
+﻿@model IEnumerable<Application.DataTransfer.GetPostDto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<h4>Search posts</h4>
+
+<div class="text-center">
+    <div class="row">
+        <form asp-controller="Posts" asp-action="Index" method="post">
+            <label>Search by keyword:</label>
+            <input type="text" name="Keyword" />&nbsp;&nbsp;&nbsp;
+
+            <label>Search by user:</label>
+            <input type="text" name="Username" />
+
+            <input type="submit" name="Search" value="Search" />
+        </form>
+    </div>
+
+
+</div>
+@if (TempData["error"] != null)
+{
+    <p class="text-danger">@TempData["error"]</p>
+}
+@if (TempData["success"] != null)
+{
+    <p class="text-success">@TempData["success"]</p>
+}
+
+<hr />
+@if (Model != null)
+{
+    @foreach (var item in Model)
+    {
+        <div class="text-center" style="border:1px outset">
+            <h2>@Html.DisplayFor(modelItem => item.Heading)</h2>
+
+
+            <div>
+                <input type="hidden" name="UserId" value="@Html.DisplayFor(modelItem => item.Id)" />
+
+
+                <p class="text-info">by: @Html.DisplayFor(modelItem => item.User)</p>
+                <p>
+                    Likes:@Html.DisplayFor(modelItem => item.Likes)
+                    | Comments: @Html.DisplayFor(modelItem => item.Comments)
+                </p>
+                <img src="~/images/post/@Html.DisplayFor(modelItem => item.Picture)" />
+
+
+
+                <div>
+                    <p>@Html.DisplayFor(modelItem => item.Text)</p>
+                </div>
+
+
+            </div>
+            <table class="text-center">
+
+                <tbody>
+                    <tr>
+
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <br />
+
+        <br />
+    }
+}

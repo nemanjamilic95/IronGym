@@ -1,0 +1,17 @@
+﻿@model Application.DataTransfer.GetPostDto
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+
+<div>
+    <h3>Are you sure you want to delete this post?</h3>
+    
+    <form asp-action="Delete">
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
