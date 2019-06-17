@@ -24,3 +24,4 @@ C:\Users\Nemanja1\Desktop\IronGym-master\IronGym\Domain\obj\Debug\netcoreapp2.1\
 C:\Users\Nemanja1\Desktop\IronGym-master\IronGym\Domain\obj\Debug\netcoreapp2.1\Domain.AssemblyInfo.cs
 C:\Users\Nemanja1\Desktop\IronGym-master\IronGym\Domain\obj\Debug\netcoreapp2.1\Domain.dll
 C:\Users\Nemanja1\Desktop\IronGym-master\IronGym\Domain\obj\Debug\netcoreapp2.1\Domain.pdb
+C:\Users\Nemanja1\Desktop\IronGym-master\IronGym\Domain\obj\Debug\netcoreapp2.1\Domain.csprojAssemblyReference.cache

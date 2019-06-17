@@ -32,7 +32,24 @@ namespace IronGym.API.Controllers
             _editProgram = editProgram;
             _deleteProgram = deleteProgram;
         }
-
+        /// <summary>
+        /// Returns all orders that match provided query
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     Get from query /Todo
+        ///     {
+        ///        "id": 1,
+        ///        "keyword": "nesto",
+        ///        "OnlyActive":true,
+        ///        "perPage":1,
+        ///        "PageNumber":1
+        ///        
+        /// 
+        ///     }
+        ///
+        /// </remarks>
         // GET: api/Programs
         [HttpGet]
         public ActionResult Get([FromQuery] ProgramSearch src)
@@ -70,7 +87,20 @@ namespace IronGym.API.Controllers
                 return StatusCode(500, e.Message);
             }
         }
-
+        /// <summary>
+        /// Creates new training program
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST From Form /Todo
+        ///     {
+        ///        "heading": "nesto",
+        ///        "Text":"post text",
+        ///        "Picture":upload a picture
+        ///     }
+        ///
+        /// </remarks>
         // POST: api/Programs
         [HttpPost]
         public ActionResult Post([FromForm] ProgramDto p)
@@ -110,7 +140,20 @@ namespace IronGym.API.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-
+        /// <summary>
+        /// Updates a single training program
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     PUT From Form /Todo
+        ///     {
+        ///        "heading": "nesto",
+        ///        "Text":"post text",
+        ///        "Picture":upload a picture
+        ///     }
+        ///
+        /// </remarks>
         // PUT: api/Programs/5
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromForm] ProgramDto p)

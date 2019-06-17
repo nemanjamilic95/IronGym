@@ -30,6 +30,19 @@ namespace IronGym.API.Controllers
             _editRole = editRole;
             _deleteRole = deleteRole;
         }
+
+        /// <summary>
+        /// Returns all orders that match provided query
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     Get from query /Todo
+        ///     {             
+        ///        "name": "nesto"
+        ///     }
+        ///
+        /// </remarks>
         // GET: api/Roles
         //[LoggedIn("Admin")]
         [HttpGet]
@@ -69,7 +82,20 @@ namespace IronGym.API.Controllers
                 return StatusCode(500, "An error occured. Please try again later.");
             }
         }
-
+        /// <summary>
+        /// Creates new user role
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST from raw body /Todo
+        ///     {
+        ///        
+        ///        "Name":"Role"
+        /// 
+        ///     }
+        ///
+        /// </remarks>
         // POST: api/Roles
         //[LoggedIn("Admin")]
         [HttpPost]
@@ -89,7 +115,20 @@ namespace IronGym.API.Controllers
                 return StatusCode(500, ex.Message);
             }
         }
-
+        /// <summary>
+        /// Updates a role
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     PUT from raw body /Todo
+        ///     {
+        ///        
+        ///        "Name":"Role"
+        /// 
+        ///     }
+        ///
+        /// </remarks>
         // PUT: api/Roles/5
         //[LoggedIn("Admin")]
         [HttpPut("{id}")]

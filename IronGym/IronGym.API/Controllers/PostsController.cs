@@ -36,7 +36,25 @@ namespace IronGym.API.Controllers
             _user = user;
         }
 
-
+        /// <summary>
+        /// Returns all orders that match provided query
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     Get from query /Todo
+        ///     {
+        ///        "id": 1,
+        ///        "keyword": "nesto",
+        ///        "username":"user"
+        ///        "OnlyActive":true,
+        ///        "perPage":1,
+        ///        "PageNumber":1,
+        ///        
+        /// 
+        ///     }
+        ///
+        /// </remarks>
         // GET: api/Posts
         [HttpGet]
         public ActionResult Get([FromQuery] PostSearch search)
@@ -75,7 +93,22 @@ namespace IronGym.API.Controllers
                 return StatusCode(500, e.Message);
             }
         }
-
+        /// <summary>
+        /// Creates new post
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST From Form /Todo
+        ///     {
+        ///        "heading": "nesto",
+        ///        "Text":"post text",
+        ///        "Picture":upload a picture,
+        ///        "UserId":1
+        /// 
+        ///     }
+        ///
+        /// </remarks>
         // POST: api/Posts
         //[LoggedIn("Trainer")]
         [HttpPost]
@@ -116,7 +149,22 @@ namespace IronGym.API.Controllers
             }
 
         }
-
+        /// <summary>
+        /// Updates single post
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     PUT From Form /Todo
+        ///     {
+        ///        
+        ///        "heading": "nesto",
+        ///        "Text":"post text",
+        ///        "Picture":upload a picture,       
+        /// 
+        ///     }
+        ///
+        /// </remarks>
         // PUT: api/Posts/5
         //[LoggedIn("Trainer")]
         [HttpPut("{id}")]

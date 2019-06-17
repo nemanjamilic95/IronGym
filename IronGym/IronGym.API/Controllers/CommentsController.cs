@@ -27,7 +27,25 @@ namespace IronGym.API.Controllers
             _deleteComment = deleteComment;
         }
 
-        // GET: api/Comments
+        /// <summary>
+        /// Returns all orders that match provided query
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     Get from query /Todo
+        ///     {
+        ///        "id": 1,
+        ///        "keyword": "nesto",
+        ///        "OnlyActive":true,
+        ///        "perPage":1,
+        ///        "PageNumber":1,
+        ///        "IdPost":1,
+        ///        "IdUser":1
+        /// 
+        ///     }
+        ///
+        /// </remarks>
         //[LoggedIn]
         [HttpGet]
         public ActionResult Get([FromQuery] CommentSearch search)
@@ -47,7 +65,7 @@ namespace IronGym.API.Controllers
             }
 
         }
-
+       
         // GET: api/Comments/5
         //[LoggedIn]
         [HttpGet("{id}")]
@@ -67,9 +85,23 @@ namespace IronGym.API.Controllers
                 return StatusCode(500, "An error occured. Please try again later");
             }
         }
-
+        /// <summary>
+        /// Creates a new comment in database
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST /Todo
+        ///     {
+        ///        "id": 1,
+        ///        "text": "CommentText",
+        ///        "userId":1,
+        ///        "PostId":1
+        ///     }
+        ///
+        /// </remarks>
         // POST: api/Comments
-       // [LoggedIn]
+        // [LoggedIn]
         [HttpPost]
         public ActionResult Post([FromBody] CreateCommentDto dto)
         {
@@ -87,9 +119,20 @@ namespace IronGym.API.Controllers
                 return StatusCode(500, "An error occured. Please try again later.");
             }
         }
-
+        /// <summary>
+        /// Updates a comment 
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     PUT /Todo
+        ///     {             
+        ///        "text": "CommentText"
+        ///     }
+        ///
+        /// </remarks>
         // PUT: api/Comments/5
-      //  [LoggedIn]
+        //  [LoggedIn]
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] CreateCommentDto dto)
         {

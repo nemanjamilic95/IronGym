@@ -35,6 +35,26 @@ namespace IronGym.API.Controllers
             _editUser = editUser;
             _deleteUser = deleteUser;
         }
+        /// <summary>
+        /// Returns all orders that match provided query
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     Get from query /Todo
+        ///     {
+        ///        "Username": "user",
+        ///        "FirstName": "nesto",
+        ///        "LastName":"user"
+        ///        "OnlyActive":true,
+        ///        "roleId":1
+        ///        "perPage":1,
+        ///        "PageNumber":1,
+        ///        
+        /// 
+        ///     }
+        ///
+        /// </remarks>
         // GET: api/Users
         //[LoggedIn("Admin")]
         [HttpGet]
@@ -74,7 +94,26 @@ namespace IronGym.API.Controllers
                 return StatusCode(500, "An error occured. Please try again later.");
             }
         }
-
+        /// <summary>
+        /// Creates new user
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST From Form /Todo
+        ///     {
+        ///        "Username": "user",
+        ///        "Password": "user123",
+        ///        "Email": "user@user.com",
+        ///        "FirstName": "nesto",
+        ///        "LastName":"user",
+        ///        "Avatar":Upload a picture,
+        ///        "RoleId":1
+        ///       
+        /// 
+        ///     }
+        ///
+        /// </remarks>
         // POST: api/Users
         [HttpPost]
         //[LoggedIn("Admin")]
@@ -119,7 +158,26 @@ namespace IronGym.API.Controllers
                 return StatusCode(500, e.Message);
             }
         }
-
+        /// <summary>
+        /// Creates new user
+        /// </summary>
+        /// <remarks>
+        /// Sample request:
+        ///
+        ///     POST From Form /Todo
+        ///     {
+        ///        "Username": "user",
+        ///        "Password": "user123",
+        ///        "Email": "user@user.com",
+        ///        "FirstName": "nesto",
+        ///        "LastName":"user",
+        ///        "Avatar":Upload a picture,
+        ///        "RoleId":1
+        ///       
+        /// 
+        ///     }
+        ///
+        /// </remarks>
         // PUT: api/Users/5
         //[LoggedIn]
         [HttpPut("{id}")]

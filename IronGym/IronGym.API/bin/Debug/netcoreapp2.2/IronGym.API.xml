@@ -4,5 +4,278 @@
         <name>IronGym.API</name>
     </assembly>
     <members>
+        <member name="M:IronGym.API.Controllers.CommentsController.Get(Application.Searches.CommentSearch)">
+             <summary>
+             Returns all orders that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 Get from query /Todo
+                 {
+                    "id": 1,
+                    "keyword": "nesto",
+                    "OnlyActive":true,
+                    "perPage":1,
+                    "PageNumber":1,
+                    "IdPost":1,
+                    "IdUser":1
+             
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.CommentsController.Post(Application.DataTransfer.CreateCommentDto)">
+             <summary>
+             Creates a new comment in database
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Todo
+                 {
+                    "id": 1,
+                    "text": "CommentText",
+                    "userId":1,
+                    "PostId":1
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.CommentsController.Put(System.Int32,Application.DataTransfer.CreateCommentDto)">
+             <summary>
+             Updates a comment 
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT /Todo
+                 {             
+                    "text": "CommentText"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.PostsController.Get(Application.Searches.PostSearch)">
+             <summary>
+             Returns all orders that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 Get from query /Todo
+                 {
+                    "id": 1,
+                    "keyword": "nesto",
+                    "username":"user"
+                    "OnlyActive":true,
+                    "perPage":1,
+                    "PageNumber":1,
+                    
+             
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.PostsController.Post(IronGym.API.DataTransfer.PostDto)">
+             <summary>
+             Creates new post
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST From Form /Todo
+                 {
+                    "heading": "nesto",
+                    "Text":"post text",
+                    "Picture":upload a picture,
+                    "UserId":1
+             
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.PostsController.Put(System.Int32,IronGym.API.DataTransfer.PostDto)">
+             <summary>
+             Updates single post
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT From Form /Todo
+                 {
+                    
+                    "heading": "nesto",
+                    "Text":"post text",
+                    "Picture":upload a picture,       
+             
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.ProgramsController.Get(Application.Searches.ProgramSearch)">
+             <summary>
+             Returns all orders that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 Get from query /Todo
+                 {
+                    "id": 1,
+                    "keyword": "nesto",
+                    "OnlyActive":true,
+                    "perPage":1,
+                    "PageNumber":1
+                    
+             
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.ProgramsController.Post(IronGym.API.DataTransfer.ProgramDto)">
+             <summary>
+             Creates new training program
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST From Form /Todo
+                 {
+                    "heading": "nesto",
+                    "Text":"post text",
+                    "Picture":upload a picture
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.ProgramsController.Put(System.Int32,IronGym.API.DataTransfer.ProgramDto)">
+             <summary>
+             Updates a single training program
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT From Form /Todo
+                 {
+                    "heading": "nesto",
+                    "Text":"post text",
+                    "Picture":upload a picture
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.RolesController.Get(Application.Searches.RoleSearch)">
+             <summary>
+             Returns all orders that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 Get from query /Todo
+                 {             
+                    "name": "nesto"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.RolesController.Post(Application.DataTransfer.CreateRoleDto)">
+             <summary>
+             Creates new user role
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST from raw body /Todo
+                 {
+                    
+                    "Name":"Role"
+             
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.RolesController.Put(System.Int32,Application.DataTransfer.CreateRoleDto)">
+             <summary>
+             Updates a role
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 PUT from raw body /Todo
+                 {
+                    
+                    "Name":"Role"
+             
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.UsersController.Get(Application.Searches.UserSearch)">
+             <summary>
+             Returns all orders that match provided query
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 Get from query /Todo
+                 {
+                    "Username": "user",
+                    "FirstName": "nesto",
+                    "LastName":"user"
+                    "OnlyActive":true,
+                    "roleId":1
+                    "perPage":1,
+                    "PageNumber":1,
+                    
+             
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.UsersController.Post(IronGym.API.DataTransfer.UserDto)">
+             <summary>
+             Creates new user
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST From Form /Todo
+                 {
+                    "Username": "user",
+                    "Password": "user123",
+                    "Email": "user@user.com",
+                    "FirstName": "nesto",
+                    "LastName":"user",
+                    "Avatar":Upload a picture,
+                    "RoleId":1
+                   
+             
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:IronGym.API.Controllers.UsersController.Put(System.Int32,IronGym.API.DataTransfer.UserDto)">
+             <summary>
+             Creates new user
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST From Form /Todo
+                 {
+                    "Username": "user",
+                    "Password": "user123",
+                    "Email": "user@user.com",
+                    "FirstName": "nesto",
+                    "LastName":"user",
+                    "Avatar":Upload a picture,
+                    "RoleId":1
+                   
+             
+                 }
+            
+             </remarks>
+        </member>
     </members>
 </doc>
