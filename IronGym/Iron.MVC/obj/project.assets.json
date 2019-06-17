@@ -13023,11 +13023,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\FAX!!!\\ASP\\IronGym\\Iron.MVC\\Iron.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Iron.MVC\\Iron.MVC.csproj",
       "projectName": "Iron.MVC",
-      "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\Iron.MVC\\Iron.MVC.csproj",
+      "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Iron.MVC\\Iron.MVC.csproj",
       "packagesPath": "C:\\Users\\Nemanja1\\.nuget\\packages\\",
-      "outputPath": "F:\\FAX!!!\\ASP\\IronGym\\Iron.MVC\\obj\\",
+      "outputPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Iron.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13046,17 +13046,17 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "F:\\FAX!!!\\ASP\\IronGym\\Application\\Application.csproj": {
-              "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\Application\\Application.csproj"
+            "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Application\\Application.csproj"
             },
-            "F:\\FAX!!!\\ASP\\IronGym\\DataAccess\\EfDataAccess.csproj": {
-              "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\DataAccess\\EfDataAccess.csproj"
+            "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\DataAccess\\EfDataAccess.csproj": {
+              "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\DataAccess\\EfDataAccess.csproj"
             },
-            "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj": {
-              "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj"
+            "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj"
             },
-            "F:\\FAX!!!\\ASP\\IronGym\\EfCommands\\EfCommands.csproj": {
-              "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\EfCommands\\EfCommands.csproj"
+            "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\EfCommands\\EfCommands.csproj": {
+              "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\EfCommands\\EfCommands.csproj"
             }
           }
         }

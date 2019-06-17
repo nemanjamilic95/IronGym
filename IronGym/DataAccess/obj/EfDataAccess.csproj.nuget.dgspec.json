@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\FAX!!!\\ASP\\IronGym\\DataAccess\\EfDataAccess.csproj": {}
+    "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\DataAccess\\EfDataAccess.csproj": {}
   },
   "projects": {
-    "F:\\FAX!!!\\ASP\\IronGym\\DataAccess\\EfDataAccess.csproj": {
+    "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\DataAccess\\EfDataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\FAX!!!\\ASP\\IronGym\\DataAccess\\EfDataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\DataAccess\\EfDataAccess.csproj",
         "projectName": "EfDataAccess",
-        "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\DataAccess\\EfDataAccess.csproj",
+        "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\DataAccess\\EfDataAccess.csproj",
         "packagesPath": "C:\\Users\\Nemanja1\\.nuget\\packages\\",
-        "outputPath": "F:\\FAX!!!\\ASP\\IronGym\\DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj": {
-                "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj"
+              "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj"
               }
             }
           }
@@ -78,14 +78,14 @@
         }
       }
     },
-    "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj": {
+    "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Nemanja1\\.nuget\\packages\\",
-        "outputPath": "F:\\FAX!!!\\ASP\\IronGym\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

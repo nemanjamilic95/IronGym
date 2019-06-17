@@ -175,12 +175,6 @@ namespace Iron.MVC.Controllers
         // GET: Posts/Edit/5
         public ActionResult Edit(int id)
         {
-            ViewBag.Users = Context.Users.Select(u => new GetUsersDto
-            {
-                Id = u.Id,
-                FirstName = u.FirstName,
-                LastName = u.LastName
-            });
 
             return View();
         }
@@ -213,9 +207,9 @@ namespace Iron.MVC.Controllers
                     Id=p.Id,
                     Heading = p.Heading,
                     Text = p.Text,
-                    Picture = newFileName,
-                    UserId = p.UserId,
-                    IsDeleted=p.IsDeleted
+                    Picture = newFileName,                   
+                    IsDeleted=p.IsDeleted,
+                    UserId=p.UserId                    
                 };
 
                 if (!ModelState.IsValid)

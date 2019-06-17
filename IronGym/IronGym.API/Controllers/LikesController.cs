@@ -29,6 +29,7 @@ namespace IronGym.API.Controllers
         }
 
         // GET: api/Likes/5
+        //[LoggedIn]
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
@@ -37,7 +38,7 @@ namespace IronGym.API.Controllers
         }
 
         // POST: api/Likes
-        [LoggedIn]
+       // [LoggedIn]
         [HttpPost]
         public ActionResult Post([FromBody] InsertLikeDto dto)
         {
@@ -57,8 +58,9 @@ namespace IronGym.API.Controllers
 
         }
 
-      
+
         // DELETE: api/ApiWithActions/5
+        //[LoggedIn]
         [HttpDelete]
         public ActionResult Delete([FromQuery]InsertLikeDto dto)
         {

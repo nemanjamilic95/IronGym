@@ -28,6 +28,7 @@ namespace IronGym.API.Controllers
         }
 
         // GET: api/Comments
+        //[LoggedIn]
         [HttpGet]
         public ActionResult Get([FromQuery] CommentSearch search)
         {
@@ -48,6 +49,7 @@ namespace IronGym.API.Controllers
         }
 
         // GET: api/Comments/5
+        //[LoggedIn]
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
@@ -67,7 +69,7 @@ namespace IronGym.API.Controllers
         }
 
         // POST: api/Comments
-        [LoggedIn]
+       // [LoggedIn]
         [HttpPost]
         public ActionResult Post([FromBody] CreateCommentDto dto)
         {
@@ -87,7 +89,7 @@ namespace IronGym.API.Controllers
         }
 
         // PUT: api/Comments/5
-        [LoggedIn]
+      //  [LoggedIn]
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] CreateCommentDto dto)
         {
@@ -109,7 +111,7 @@ namespace IronGym.API.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
-        [LoggedIn]
+       // [LoggedIn]
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {

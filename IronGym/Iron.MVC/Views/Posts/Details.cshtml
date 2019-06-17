@@ -23,7 +23,7 @@
                 Likes:@Html.DisplayFor(model => model.Likes)
                 | Comments: @Html.DisplayFor(model => model.Comments)
             </p>*@
-        <img src="~/images/post/@Html.DisplayFor(model => model.Picture)" />
+        <img src="~/images/post/@Html.DisplayFor(model => model.Picture)" width="80%" height="80%" />
 
 
 
@@ -45,30 +45,31 @@
 
                 <p class="text-info">by: <strong>@c.Username</strong></p>&nbsp;
                 <img src="~/images/avatar/@c.Avatar" class="img-fluid rounded-circle w-25" />&nbsp;&nbsp;
-                <form asp-controller="Comments" asp-action="Edit" method="post">
+               
+                @*<input type="text" value="@c.Text" name="Text" style="border:none" />*@
+            
+                <form asp-controller="Comments" asp-action="Edit" method="post" class="col">
                     <input type="hidden" name="UserId" value="@c.IdUser" />
                     <input type="hidden" name="Id" value="@c.Id" />
-                    <input type="text" value="@c.Text" name="Text" style="border:none" />
+                    <textarea name="Text" rows="3" cols="100" style="border:none">@c.Text</textarea>
                     <input type="submit" class="btn-primary" value="Edit" />
                 </form>
-                &nbsp;
-                <form asp-controller="Comments" asp-action="Delete" method="post">
-                   <input type="hidden" name="Id" value="@c.Id" />                   
+                <form asp-controller="Comments" asp-action="Delete" method="post" class="col row">
+                    <input type="hidden" name="Id" value="@c.Id" />
                     <input type="submit" class="btn-danger" value="Delete" />
                 </form>
-            </div>
-
-          
+            
+            </div>         
 
         }
     }
     <hr />
-<form asp-controller="Comments" asp-action="Create" method="post">
-    <textarea name="Text" rows="3" cols="100"></textarea>
-    <input type="hidden" name="PostId" value="@Html.DisplayFor(model => model.Id)" />
-    <input type="hidden" name="UserId" value="2" /><br/>
-    <input type="submit" name="submit" value="Insert Comment" />
-</form>
+    <form asp-controller="Comments" asp-action="Create" method="post">
+        <textarea name="Text" rows="3" cols="90"></textarea>
+        <input type="hidden" name="PostId" value="@Html.DisplayFor(model => model.Id)" />
+        <input type="hidden" name="UserId" value="2" /><br />
+        <input type="submit" name="submit" value="Insert Comment" />
+    </form>
 
 </div>
 

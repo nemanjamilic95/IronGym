@@ -3683,11 +3683,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\FAX!!!\\ASP\\IronGym\\EfCommands\\EfCommands.csproj",
+      "projectUniqueName": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\EfCommands\\EfCommands.csproj",
       "projectName": "EfCommands",
-      "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\EfCommands\\EfCommands.csproj",
+      "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\EfCommands\\EfCommands.csproj",
       "packagesPath": "C:\\Users\\Nemanja1\\.nuget\\packages\\",
-      "outputPath": "F:\\FAX!!!\\ASP\\IronGym\\EfCommands\\obj\\",
+      "outputPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\EfCommands\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3706,14 +3706,14 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "F:\\FAX!!!\\ASP\\IronGym\\Application\\Application.csproj": {
-              "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\Application\\Application.csproj"
+            "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Application\\Application.csproj"
             },
-            "F:\\FAX!!!\\ASP\\IronGym\\DataAccess\\EfDataAccess.csproj": {
-              "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\DataAccess\\EfDataAccess.csproj"
+            "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\DataAccess\\EfDataAccess.csproj": {
+              "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\DataAccess\\EfDataAccess.csproj"
             },
-            "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj": {
-              "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj"
+            "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj"
             }
           }
         }

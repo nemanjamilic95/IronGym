@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj",
+      "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj",
       "packagesPath": "C:\\Users\\Nemanja1\\.nuget\\packages\\",
-      "outputPath": "F:\\FAX!!!\\ASP\\IronGym\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

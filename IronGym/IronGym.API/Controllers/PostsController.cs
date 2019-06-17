@@ -77,7 +77,7 @@ namespace IronGym.API.Controllers
         }
 
         // POST: api/Posts
-        [LoggedIn]
+        //[LoggedIn("Trainer")]
         [HttpPost]
         public ActionResult Post([FromForm] PostDto p)
         {
@@ -118,7 +118,7 @@ namespace IronGym.API.Controllers
         }
 
         // PUT: api/Posts/5
-        [LoggedIn]
+        //[LoggedIn("Trainer")]
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromForm] PostDto p)
         {
@@ -162,7 +162,8 @@ namespace IronGym.API.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
-        [LoggedIn]
+        //[LoggedIn("Trainer")]
+        //[LoggedIn("User")]
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {

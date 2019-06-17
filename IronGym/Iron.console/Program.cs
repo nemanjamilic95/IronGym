@@ -84,7 +84,7 @@ namespace Iron.Console
             {
                 Heading = "Volume Training",
                 Text = "For this workout protocol, you are to select one compound exercise for each muscle group and hit it hard with ten sets of ten reps. Once those have been completed, then you can add a few isolation exercises if you wish but bring them down to only 2-3 sets of 10-15 reps.Aim to keep up the pace of the workout by keeping your rest to 60 - 90 seconds.Take one day off between workouts and have the full weekend for solid recuperation.",
-                Picture = "img_3.jpg",
+                Picture = "img_3.png",
                 UserId = 3
 
             });

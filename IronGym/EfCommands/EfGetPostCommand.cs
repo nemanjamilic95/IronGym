@@ -30,7 +30,7 @@ namespace EfCommands
                 Text=post.Text,
                 Picture=post.Picture,
                 UserId=post.UserId,
-                Comments=post.Comments.Select(c=>c.Text).Count(),
+                Comments=post.Comments.Where(c=>c.IsDeleted==false).Select(c=>c.Text).Count(),
                 Likes=post.Likes.Select(l=>l.UserId).Count(),
                 User=post.User.Username
             };

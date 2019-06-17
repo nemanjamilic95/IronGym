@@ -36,6 +36,7 @@ namespace IronGym.API.Controllers
             _deleteUser = deleteUser;
         }
         // GET: api/Users
+        //[LoggedIn("Admin")]
         [HttpGet]
         public ActionResult Get([FromQuery]UserSearch search)
         {
@@ -55,6 +56,7 @@ namespace IronGym.API.Controllers
         }
 
         // GET: api/Users/5
+        //[LoggedIn("Admin")]
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
@@ -75,6 +77,7 @@ namespace IronGym.API.Controllers
 
         // POST: api/Users
         [HttpPost]
+        //[LoggedIn("Admin")]
         public ActionResult Post([FromForm] UserDto u)
         {
 
@@ -118,6 +121,7 @@ namespace IronGym.API.Controllers
         }
 
         // PUT: api/Users/5
+        //[LoggedIn]
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromForm] UserDto u)
         {
@@ -172,6 +176,7 @@ namespace IronGym.API.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
+        //[LoggedIn("Admin")]
         [HttpPatch("{id}")]
         public ActionResult Delete(int id)
         {

@@ -33,15 +33,8 @@
                 
             </div>
             <div class="form-group">
-                <select name="UserId">
-                    @if (ViewBag.Users != null)
-                    {
-                        @foreach (var u in ViewBag.Users)
-                        {
-                            <option value="@u.Id">@u.FirstName @u.LastName</option>
-                        }
-                    }
-                </select>
+                <input type="hidden" name="UserId" value="3"/>
+                   
                 <span asp-validation-for="UserId" class="text-danger"></span>
             </div>
             <div class="form-group form-check">

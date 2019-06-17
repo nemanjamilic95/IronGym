@@ -3639,11 +3639,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\FAX!!!\\ASP\\IronGym\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\Nemanja1\\.nuget\\packages\\",
-      "outputPath": "F:\\FAX!!!\\ASP\\IronGym\\Application\\obj\\",
+      "outputPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3662,8 +3662,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj": {
-              "projectPath": "F:\\FAX!!!\\ASP\\IronGym\\Domain\\Domain.csproj"
+            "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Nemanja1\\Desktop\\IronGym-master\\IronGym\\Domain\\Domain.csproj"
             }
           }
         }

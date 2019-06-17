@@ -6,6 +6,7 @@ using Application.Commands;
 using Application.DataTransfer;
 using Application.Exceptions;
 using Application.Searches;
+using IronGym.API.Helpers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -30,6 +31,7 @@ namespace IronGym.API.Controllers
             _deleteRole = deleteRole;
         }
         // GET: api/Roles
+        //[LoggedIn("Admin")]
         [HttpGet]
         public ActionResult Get([FromQuery] RoleSearch search)
         {
@@ -49,6 +51,7 @@ namespace IronGym.API.Controllers
         }
 
         // GET: api/Roles/5
+        //[LoggedIn("Admin")]
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
@@ -68,6 +71,7 @@ namespace IronGym.API.Controllers
         }
 
         // POST: api/Roles
+        //[LoggedIn("Admin")]
         [HttpPost]
         public ActionResult Post([FromBody] CreateRoleDto dto)
         {
@@ -87,6 +91,7 @@ namespace IronGym.API.Controllers
         }
 
         // PUT: api/Roles/5
+        //[LoggedIn("Admin")]
         [HttpPut("{id}")]
         public ActionResult Put(int id, [FromBody] CreateRoleDto dto)
         {
@@ -107,6 +112,7 @@ namespace IronGym.API.Controllers
         }
 
         // DELETE: api/ApiWithActions/5
+        //[LoggedIn("Admin")]
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {

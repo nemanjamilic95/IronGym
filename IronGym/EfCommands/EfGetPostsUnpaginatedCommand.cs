@@ -48,7 +48,7 @@ namespace EfCommands
                 Heading = p.Heading,
                 Text = p.Text,
                 Picture = p.Picture,
-                Comments = p.Comments.Select(c => c.Text).Count(),
+                Comments = p.Comments.Where(c=>c.IsDeleted==false).Select(c=>c.Text).Count(),
                 Likes = p.Likes.Select(l => l.UserId).Count(),
                 UserId = p.User.Id,
                 User = p.User.Username
