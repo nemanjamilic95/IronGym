@@ -44,3 +44,5 @@ E:\IronGym\IronGym.API\obj\Debug\netcoreapp2.2\IronGym.API.RazorTargetAssemblyIn
 E:\IronGym\IronGym.API\obj\Debug\netcoreapp2.2\IronGym.API.csproj.CopyComplete
 E:\IronGym\IronGym.API\obj\Debug\netcoreapp2.2\IronGym.API.dll
 E:\IronGym\IronGym.API\obj\Debug\netcoreapp2.2\IronGym.API.pdb
+F:\FAX!!!\ASP\IronGym\IronGym.API\bin\Debug\netcoreapp2.2\IronGym.API.xml
+F:\FAX!!!\ASP\IronGym\IronGym.API\obj\Debug\netcoreapp2.2\IronGym.API.xml
